@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Day3 extends Day {
 
   public Day3() {
-    inputFile = "/Users/fevelasquez/Development/advent-of-code-2020/src/com/fernst/aoc/days/day3/input0.txt";
+    inputFile = "./src/com/fernst/aoc/days/day3/input0.txt";
   }
 
   @Override

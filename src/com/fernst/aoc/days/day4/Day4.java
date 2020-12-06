@@ -11,7 +11,7 @@ import java.util.Set;
 public class Day4 extends Day {
 
   public Day4() {
-    inputFile = "/Users/fevelasquez/Development/advent-of-code-2020/src/com/fernst/aoc/days/day4/input0.txt";
+    inputFile = "./src/com/fernst/aoc/days/day4/input0.txt";
   }
 
   @Override
@@ -96,7 +96,7 @@ public class Day4 extends Day {
   }
 
   public boolean isNumberInRange(String val, int min, int max) {
-    int num = Integer.valueOf(val);
+    int num = Integer.parseInt(val);
     return num >= min && num <= max;
   }
 

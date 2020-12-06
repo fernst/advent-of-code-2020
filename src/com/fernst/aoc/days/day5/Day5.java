@@ -14,7 +14,7 @@ public class Day5 extends Day {
   }
 
   public Day5() {
-    inputFile = "/Users/fevelasquez/Development/advent-of-code-2020/src/com/fernst/aoc/days/day5/input0.txt";
+    inputFile = "./src/com/fernst/aoc/days/day5/input0.txt";
   }
 
   @Override
@@ -40,6 +40,7 @@ public class Day5 extends Day {
       seenSeatIds.add(seatId);
     }
 
+    //Sort list, O(N log N) runtime
     seenSeatIds.sort(Comparator.naturalOrder());
 
     int seatId = -1;

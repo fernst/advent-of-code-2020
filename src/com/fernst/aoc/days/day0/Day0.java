@@ -4,7 +4,7 @@ import com.fernst.aoc.days.Day;
 
 public class Day0 extends Day {
   public Day0() {
-    inputFile = "/Users/fevelasquez/Development/advent-of-code-2020/src/com/fernst/aoc/days/day0/input0.txt";
+    inputFile = "./src/com/fernst/aoc/days/day0/input0.txt";
   }
 
   public void part1() {
