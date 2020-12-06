@@ -26,6 +26,12 @@ public abstract class Day {
     }
   }
 
+  public String[] getInputLines() {
+    String input = getInput();
+
+    return input.split("\n");
+  }
+
   public abstract void part1();
 
   public abstract void part2();
