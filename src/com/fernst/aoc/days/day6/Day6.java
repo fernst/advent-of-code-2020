@@ -86,9 +86,8 @@ public class Day6 extends Day {
 
         Set<Character> charsInLine = new HashSet<>();
 
-        for (int i = 0; i < line.length(); i++) {
-            charsInLine.add(line.charAt(i));
-        }
+        //Reuse existing code.
+        processLinePart1(line, charsInLine);
 
         //This will only happen on the first line for a given group.
         if (charsInGroup == null) return charsInLine;
@@ -96,11 +95,5 @@ public class Day6 extends Day {
         charsInGroup.retainAll(charsInLine);
 
         return charsInGroup;
-    }
-
-    public int countElements(Set<Character> charsInGroup) {
-        int size = charsInGroup.size();
-        charsInGroup.clear();
-        return size;
     }
 }
