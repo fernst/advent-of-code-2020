@@ -10,8 +10,9 @@ import java.util.Set;
 
 public class Day4 extends Day {
 
-  public Day4() {
-    inputFile = "./src/com/fernst/aoc/days/day4/input0.txt";
+  @Override
+  public String getInputFileName() {
+    return "./src/com/fernst/aoc/days/day4/input0.txt";
   }
 
   @Override

@@ -10,8 +10,9 @@ import java.util.Scanner;
 
 public class Day3 extends Day {
 
-  public Day3() {
-    inputFile = "./src/com/fernst/aoc/days/day3/input0.txt";
+  @Override
+  public String getInputFileName() {
+    return "./src/com/fernst/aoc/days/day3/input0.txt";
   }
 
   @Override

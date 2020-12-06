@@ -7,10 +7,13 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Day2 extends Day {
-  public Day2() {
-    inputFile = "./src/com/fernst/aoc/days/day2/input0.txt";
+
+  @Override
+  public String getInputFileName() {
+    return "./src/com/fernst/aoc/days/day2/input0.txt";
   }
 
+  @Override
   public void part1() {
     String input = this.getInput();
     List<Integer> values = new LinkedList<>();
@@ -33,6 +36,7 @@ public class Day2 extends Day {
                                      valid));
   }
 
+  @Override
   public void part2() {
     String input = this.getInput();
     List<Integer> values = new LinkedList<>();

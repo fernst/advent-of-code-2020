@@ -13,7 +13,7 @@ public abstract class Day {
 
   public String getInput() {
     try {
-      File f = new File(this.inputFile);
+      File f = new File(getInputFileName());
       if (!f.exists()) {
         System.out.println(String.format("%s not found", this.inputFile));
         return null;
@@ -31,6 +31,8 @@ public abstract class Day {
 
     return input.split("\n");
   }
+
+  public abstract String getInputFileName();
 
   public abstract void part1();
 

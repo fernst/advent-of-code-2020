@@ -8,13 +8,10 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Day5 extends Day {
-  public enum Direction {
-    BOTTOM_LEFT,
-    TOP_RIGHT;
-  }
 
-  public Day5() {
-    inputFile = "./src/com/fernst/aoc/days/day5/input0.txt";
+  @Override
+  public String getInputFileName() {
+    return "./src/com/fernst/aoc/days/day5/input0.txt";
   }
 
   @Override
@@ -96,5 +93,10 @@ public class Day5 extends Day {
     } else {
       return new int[]{((max + min) / 2) + 1, max};
     }
+  }
+
+  public enum Direction {
+    BOTTOM_LEFT,
+    TOP_RIGHT;
   }
 }

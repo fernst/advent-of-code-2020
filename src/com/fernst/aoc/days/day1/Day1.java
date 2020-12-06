@@ -11,12 +11,15 @@ import java.util.List;
 import java.util.Set;
 
 public class Day1 extends Day {
-  public Day1() {
-    inputFile = "./src/com/fernst/aoc/days/day1/input0.txt";
-  }
 
   final int globalTarget = 2020;
 
+  @Override
+  public String getInputFileName() {
+    return "./src/com/fernst/aoc/days/day1/input0.txt";
+  }
+
+  @Override
   public void part1() {
     String input = this.getInput();
     List<Integer> values = new LinkedList<>();
@@ -35,6 +38,7 @@ public class Day1 extends Day {
     }
   }
 
+  @Override
   public void part2() {
     String input = this.getInput();
     List<Integer> values = new LinkedList<>();
