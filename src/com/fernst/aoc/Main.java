@@ -6,6 +6,7 @@ import com.fernst.aoc.days.day3.Day3;
 import com.fernst.aoc.days.day4.Day4;
 import com.fernst.aoc.days.day5.Day5;
 import com.fernst.aoc.days.day6.Day6;
+import com.fernst.aoc.days.day7.Day7;
 
 public class Main {
 
@@ -17,5 +18,6 @@ public class Main {
         (new Day4()).run();
         (new Day5()).run();
         (new Day6()).run();
+        (new Day7()).run();
     }
 }
